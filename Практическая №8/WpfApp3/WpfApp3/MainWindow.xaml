@@ -1,0 +1,21 @@
+﻿<Window x:Class="WpfApp3.MainWindow"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        Title="Люди" Height="600" Width="800">
+
+    <Grid>
+        <ListBox x:Name="listBoxPeople" Margin="10" />
+        <!-- Список для отображения людей -->
+        <Button Content="Выход" HorizontalAlignment="Left" VerticalAlignment="Bottom" Width="89" Click="ExitButton_Click" RenderTransformOrigin="0.63,-0.309" Height="25" Margin="10,0,0,10"/>
+        <!-- Кнопка выхода -->
+        <Button Content="О программе" HorizontalAlignment="Right" VerticalAlignment="Bottom" Width="95" Click="AboutButton_Click" Height="25" Margin="0,0,10,10"/>
+        <!-- Кнопка о программе -->
+
+        <TextBlock x:Name="textBlockInfo" Margin="10,337,10,0" VerticalAlignment="Top" Height="128" TextAlignment="Center"/>
+        <!-- Текстовый блок для вывода реакций -->
+
+        <!-- Добавление кнопки "Показать реакции" -->
+        <Button Content="Показать реакции" HorizontalAlignment="Center" VerticalAlignment="Top" Margin="0,494,0,0" Click="ShowReactions_Click" Width="155" Height="40"/>
+
+    </Grid>
+</Window>
